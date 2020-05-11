@@ -1,4 +1,4 @@
-**COVID-19 DATA APP**
+**COVID-19 DATA SEARCH APP**
 ---
 Aplikasi sederhana untuk menampilkan data covid-19 di suatu negara.
 
