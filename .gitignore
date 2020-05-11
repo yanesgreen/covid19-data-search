@@ -1,0 +1,14 @@
+# Dependency directory
+node_modules/
+
+# Directory-based project format:
+.idea/
+
+# Production Directory:
+dist/
+
+# Zeit/Vercel:
+.vercel
+
+#files
+package-lock.json

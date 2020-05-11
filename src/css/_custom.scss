@@ -1,0 +1,138 @@
+// colors
+$primary: darkslateblue;
+$danger: #DB0075;
+$info: lightblue;
+$success: darkturquoise;
+
+// font
+$font-family-sans-serif: "Quicksand", sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+// letter spacing
+.ls-wide {
+  letter-spacing: 0.1em;
+}
+
+.ls-wider {
+  letter-spacing: 0.2em;
+}
+
+.ls-widest {
+  letter-spacing: 0.3em;
+}
+
+// font size
+.text-sm {
+  font-size: 80%;
+}
+
+.text-xs {
+  font-size: 60%;
+}
+
+// rounded
+.rounded-full {
+  border-radius: 500px !important;
+}
+
+//css transition
+.card-raised {
+  box-shadow: 0 1px 15px 1px rgba(62, 57, 107, .07);
+  backface-visibility: hidden;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateY(-4px) scale(1.02);
+    -webkit-box-shadow: 0 14px 24px rgba(62, 57, 107, .2);
+    box-shadow: 0 14px 24px rgba(62, 57, 107, .2);
+    transition: all 0.5s;
+  }
+}
+
+// opacity
+.op-0 {
+  opacity: 0;
+}
+
+// css animation
+.fade-in-up {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-up-delay-1 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-up-delay-2 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+// modal
+.modal-content {
+  position: relative;
+
+  & .modal-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    background: deeppink;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.btn-external {
+  min-width: 155px;
+}
+
+// page
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: ghostwhite;
+}
+
+main {
+  flex: 1;
+}
