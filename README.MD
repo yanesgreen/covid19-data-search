@@ -9,3 +9,6 @@ serve | npm run serve |
 build | npm run build |
 prod| npm run prod |
 
+## Production Link
+https://covid19data-jet.now.sh/
+
